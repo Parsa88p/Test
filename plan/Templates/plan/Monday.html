@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    Monday
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'plan/Monday.css' %}">
+{% endblock %}
+{% block body %}
+    <h2 style="color: white" class="text" dir="rtl">دوشنبه</h2>
+    <br>
+    <h4 style="color: white" class="text" dir="rtl">
+        ● زنگ اول : درس ریاضی با استاد فیضی از ساعت 8:00 تا 9:10<br>
+        ● زنگ تفریح اول : از ساعت 9:10 تا 9:30<br>
+        ● زنگ دوم : درس نگارش با استاد رستمی از ساعت 9:30 تا 10:40<br>
+        ● زنگ تفریح دوم : از ساعت 10:40 تا 11:00<br>
+        ● زنگ سوم : درس عربی با استاد نیکزارع از ساعت 11:00 تا 12:10<br>
+        ● زنگ تفریح سوم : از ساعت 12:10 تا 12:30<br>
+        ● زنگ چهارم : درس علوم با استاد امامی از ساعت 12:30 تا 1:40<br>
+    </h4>
+    <br>
+    <br>
+    <h6 style="color: white" dir="rtl">* در روز های شنبه و دوشنبه مدرسه چهار زنگ دارد</h6>
+{% endblock %}

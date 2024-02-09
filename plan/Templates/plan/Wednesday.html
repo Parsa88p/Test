@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    Wednesday
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'plan/Wednesday.css' %}">
+{% endblock %}
+{% block body %}
+    <h2 style="color: white" class="text" dir="rtl">چهارشنبه</h2>
+    <br>
+    <h4 style="color: white" class="text" dir="rtl">
+        ● زنگ اول : درس ورزش با استاد جوادزاده از ساعت 8:00 تا 9:10<br>
+        ● زنگ تفریح اول : از ساعت 9:10 تا 9:30<br>
+        ● زنگ دوم : درس دینی با استاد علیزاده از ساعت 9:30 تا 10:40<br>
+        ● زنگ تفریح دوم : از ساعت 10:40 تا 11:00<br>
+        ● زنگ سوم : درس ریاضی با استاد فیضی از ساعت 11:00 تا 12:10<br>
+    </h4>
+{% endblock %}

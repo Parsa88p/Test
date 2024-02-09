@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    Update profile
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'accounts/UpdateProfile.css' %}">
+{% endblock %}
+{% block body %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <h2 style="color: white">Update Profile</h2>
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <button type="submit">Update</button>
+</form>
+{% endblock %}

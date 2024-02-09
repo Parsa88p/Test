@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    برنامه هفتگی
+{% endblock %}
+{% block style %}
+    table {
+        width: 98%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 25px;
+    }`
+
+    th {
+        background-color: #FFFFFF;
+    }
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'home/page1.css' %}">
+{% endblock %}
+{% block body %}
+<table dir="rtl">
+    <thead>
+        <tr>
+            <th style="color: white" >روز/زنگ</th>
+            <th style="color: white">زنگ اول</th>
+            <th style="color: white">زنگ دوم</th>
+            <th style="color: white">زنگ سوم</th>
+            <th style="color: white">زنگ چهارم</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="color: white"><a href="{% url 'plan:Saturday' %}" style="text-decoration: none">شنبه</a></td>
+            <td style="color: white">علوم</td>
+            <td style="color: white">فارسی</td>
+            <td style="color: white"> ریاضی</td>
+            <td style="color: white">مطالعات</td>
+        </tr>
+        <tr>
+            <td style="color: white"><a href="{% url 'plan:Sunday' %}" style="text-decoration: none">یکشنبه</a></td>
+            <td style="color: white">قرآن</td>
+            <td style="color: white">دفاعی</td>
+            <td style="color: white">هنر</td>
+            <td style="color: white">---</td>
+        </tr>
+        <tr>
+            <td style="color: white"><a href="{% url 'plan:Monday' %}" style="text-decoration: none">دوشنبه</a></td>
+            <td style="color: white">ریاضی</td>
+            <td style="color: white">نگارش</td>
+            <td style="color: white">عربی</td>
+            <td style="color: white">علوم</td>
+        </tr>
+        <tr>
+            <td style="color: white"><a href="{% url 'plan:Tuesday' %}" style="text-decoration: none">سه شنبه</a></td>
+            <td style="color: white">ع/م</td>
+            <td style="color: white">زبان</td>
+            <td style="color: white">فناوری</td>
+            <td style="color: white">---</td>
+        </tr>
+        <tr>
+            <td style="color: white"><a href="{% url 'plan:Wednesday' %}" style="text-decoration: none">چهارشنبه</a></td>
+            <td style="color: white">ورزش</td>
+            <td style="color: white">دینی</td>
+            <td style="color: white">ریاضی</td>
+            <td style="color: white">---</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

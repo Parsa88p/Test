@@ -1,0 +1,24 @@
+tbody{
+    background-color: #212529;
+    margin: 150px auto;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+tbody label{
+    display: none;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background: #222831;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: none;
+}
+button:hover{
+    background: cadetblue;
+}
+body{
+    background-image: url("https://s30.picofile.com/file/8472283684/d3b9245271777a8004a26f529fed7cfc.jpg");
+}

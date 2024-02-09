@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    Tuesday
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'plan/Tuesday.css' %}">
+{% endblock %}
+{% block body %}
+    <h2 style="color: white" class="text" dir="rtl">سه شنبه</h2>
+    <br>
+    <h4 style="color: white" class="text" dir="rtl">
+        ● زنگ اول : درس علوم با استاد امامی در روز های فرد و درس مطالعات  با استاد حیدری در روز های زوج از ساعت 8:00 تا 9:10<br>
+        ● زنگ تفریح اول : از ساعت 9:10 تا 9:30<br>
+        ● زنگ دوم : درس زبان با استاد باستانی از ساعت 9:30 تا 10:40<br>
+        ● زنگ تفریح دوم : از ساعت 10:40 تا 11:00<br>
+        ● زنگ سوم : درس کار و فناوری با استاد احمدیان از ساعت 11:00 تا 12:10<br>
+    </h4>
+{% endblock %}

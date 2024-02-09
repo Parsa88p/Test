@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% load static %}
+    UserProfile
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'accounts/profile.css' %}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+{% block body %}
+    <h1 style="color: white">My profile :</h1>
+<table>
+<tr>
+    <th style="color: white">
+        Username: {{ profile.user.username }}
+    </th>
+</tr>
+<tr>
+    <th style="color: white">
+       Name: {{ profile.user.first_name }}
+    </th>
+</tr>
+<tr>
+    <th style="color: white">
+        Lastname: {{ profile.user.last_name }}
+    </th>
+</tr>
+<tr>
+    <th style="color: white">
+        Email: {{ profile.user.email }}
+    </th>
+</tr>
+<tr>
+    <th style="color: white">
+        Phone: {{ profile.phone }}
+    </th>
+</tr>
+<tr>
+    <th style="color: white">
+        Address: {{ profile.address }}
+    </th>
+</tr>
+</table>
+    <br>
+    <button type="button">
+        <a href="{% url 'accounts:update' %}" style="text-decoration: none"><font color="white">Update Profile</font></a>
+    </button>
+    <button type="button">
+        <a href="{% url 'accounts:change' %}" style="text-decoration: none"><font color="white">Change Password</font></a>
+    </button>
+{% endblock %}
